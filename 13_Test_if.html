@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 13_Test_avg.html </title>
+    
+    <style>
+
+    </style>
+    
+    <script>
+    //자바스크립트 -----------------------------------
+    function mypass(){
+        let kor=0, eng=0, tot=0, avg=0, msg='', grade='F', result='';
+        //let 표준값들_숫자는 0부터 문자는 ''에 들어가라 ?인거같아요.
+
+        kor = 60;  
+        eng = 65;
+        tot = kor + eng;
+        avg = tot/2;
+        //변수를 지정해주었어요.
+
+        //if~else if~ if~else 100~90 A / 80~89~ B / 70~79 C / 60~69 D/ 0~59 F
+        if (avg>=90){grade='귀하의 학점은 A 입니다.'}
+        else if (avg>=80){grade='귀하의 학점은 B 입니다.'}
+        else if (avg>=70){grade='귀하의 학점은 C 입니다.'}
+        else if (avg>=60){grade='귀하의 학점은 D 입니다.'}
+        else (avg=<60){grade='귀하의 학점은 F 입니다.'}
+
+        //다중 if문
+        if(avg>=70) { msg='합격';}
+        else if(avg<=89){ msg='불합격';}
+  
+
+        let info = '';
+        info = (avg>=70)?'pass':'failed';
+        // info= (avg>=70)? 5:-1;
+
+        result+=avg
+        result = '<h2>귀하의 점수는='+ result + '으로 ' + info ; 
+        //document.write(result);
+        document.getElementById('Showup').innerHTML=result;
+    }
+</script>
+  
+</head>
+<!-- 주석 '시작' 입니다.    ------  -->
+<body>
+    <h2> 13_Test_avg.html </h2>
+
+    <div id="Showup">
+        <img src="./img/Black_Desert.jpg" alt="" width="300" height="180">
+    </div>
+
+    <button onclick="mypass()">점수확인</button>
+  
+</body>
+</html>

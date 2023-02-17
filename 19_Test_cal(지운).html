@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test.html</title>
+    
+<script>
+//자바스크립트 -----------------------------------
+
+
+    function orderCheck() {
+            let menu = document.getElementById('menu_A').value;
+            let cnt = document.getElementById('cnt01').value;
+
+            let content = document.getElementById('result_window').innerText = ((menu) * (cnt)) 
+            document.getElementById('result_window').innerHTML=content
+            
+        } 
+</script>
+  
+</head>
+<!-- 주석 '시작' 입니다.    ------  -->
+<body>
+    <h1>[투다리 메뉴표]</h1>
+
+    <div class="container">
+        <div id="menu_A">
+            <label for="">술종류
+                <p></p>
+                <select name="select_side" >
+                    <option value="2000">소주(3000원)</option>
+                    <option value="">맥주(2000원)</option>
+                    <option value="">콜라(5000원)</option>
+                </select>
+            </label>
+        </div>
+
+        <div id="cnt01">
+            <label for="">수량
+                <p></p>
+                <input type="number" name="quantity" id="quantity_01">
+            </label>
+        </div>
+        
+        <div class="menu_B">
+            <label for="">안주종류
+                <p></p>
+                <select name="select_menu">
+                    <option value="">제육볶음(8000원)</option>
+                    <option value="">두부김치(10000원)</option>
+                    <option value="">골뱅이무침(7000원)</option>
+                    <option value="">김치파전(5000원)</option>
+                </select>
+            </label>
+        </div>
+
+        <div id="cnt02">
+            <label for="">수량
+                <p></p>
+                <input type="number" name="quantity" >
+            </label>
+        </div>
+    </div>
+
+    <p></p>
+
+    <div>
+        <button class="btn_result" onclick="ordercheck()">주 문 확 인</button>
+    </div>
+    
+    <p></p>
+
+
+    <div id="result_window">
+        <textarea name="주문확인표" id="" cols="86" rows="20" placeholder="주문을 확인해주세요"></textarea>
+    </div>
+</body>
+<!-- 소주(3000원) 맥주(2000원) 콜라(5000원)    ------  -->
+<!-- 제육볶음(8000원) 두부김치(10000원) 골뱅무침(7000원) 김치파전(5000원)    ------  -->
+<style>
+    /*css주석 기입  */
+    div {
+        display: inline-block;
+        border: 1px ;
+        border-style: none;
+    }
+    h1{
+        margin-left: 35px;
+        padding-top: 15px;
+    }
+    label{
+        font-weight: bold;
+        font-size: 14pt;
+    }
+    div .btn_result{
+        font-weight: bold;
+        width: 150px;
+        height: 50px;
+    }
+    ::placeholder{
+        font-size: 25pt;
+    }
+    body{
+        margin-bottom: 50px;
+    }
+</style>
+</html>

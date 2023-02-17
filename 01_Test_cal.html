@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_Test_cal.html </title>
+    
+    <script>
+    //자바스크립트 -----------------------------------
+    function mytest(){
+        var a=92,b=92, sumA=0, sumB=0 ;
+        sumA=(a++)+7 ;
+        sumB=(++b)+7 ;
+        
+        document.write('<h2>a=',a,' sumA=',sumA,'</h2>')
+        document.write('<h2>b=',b,' sumB=',sumB,'</h2>')
+        document.write('<h2>++a와 a++는 먼저 더하느냐 이따 더하느냐 차이 입니다.</h2>')
+        document.write('a++은 a연산을 먼저 인식합니다.(괄호안 값을 먼저 연산)')
+    }
+    function myname(){
+        let name='리호영'
+        
+        alert(`내이름은 ${name}입니다`)
+    }
+    </script>
+  
+</head>
+<!-- 주석 '시작' 입니다.    ------  -->
+<body>
+    <h2>01_Test_cal.html </h2>
+    <button onclick="mytest()">result</button>
+    <button onclick="myname()">자기소개</button>
+    
+</body>
+<!-- 주석 '끝' 입니다.    ------  -->
+<style>
+    /*css주석 기입  */
+</style>
+</html>

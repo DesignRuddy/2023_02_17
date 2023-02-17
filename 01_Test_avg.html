@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 01_Test_avg.html </title>
+    
+    <style>
+
+    </style>
+    
+    <script>
+    //자바스크립트 -----------------------------------
+    function mypass(){
+        let kor=0, eng=0, tot=0, avg=0, msg='', grade='F', result='';
+        
+        kor = 90;  
+        eng = 85;
+        tot = kor + eng;
+        avg = tot/2;
+        
+
+        if(avg>=70) { msg='축 합격';}
+        else { msg='불합격';}
+
+        
+        result = '총점='+ tot + ' 평균=' + avg + ' 결과=' + msg;
+        //document.write(result);
+        document.getElementById('Showup').innerHTML=result;
+    }
+</script>
+  
+</head>
+<!-- 주석 '시작' 입니다.    ------  -->
+<body>
+    <h2> 01_Test_avg.html </h2>
+
+    <div id="Showup">
+        <img src="./img/Black_Desert._02.jpg" alt="" width="300" height="180">
+        <img src="./img/Black_Desert._01jpg.jpg" alt="" width="300" height="180">
+        <img src="./img/Black_Desert.jpg" alt="" width="300" height="180">
+    </div>
+
+    <button onclick="mypass()">점수확인</button>
+    <button onclick="">숫자출력</button>
+
+  
+</body>
+</html>

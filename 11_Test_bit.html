@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 11_Test_avg.html </title>
+    
+    <style>
+        *{
+            font-size: 20pt;
+        }
+    </style>
+    
+    <script>
+    //자바스크립트 -----------------------------------
+    function mybit(){
+        const PI=3.1415; //상수
+        const SM='박진영'; //상수
+        const NT='대한민국'; 
+                //PI=7.8
+                document.write(PI,'<br>') ;
+
+        
+                //PI=7.8 ; 재할당하지마세요
+                //primitive(숫자,문자,불)/object(배열)
+                //escape문자 \n \t \''
+        var temp2; //값 정의안됌
+        document.write(temp2,'<br>'); //underfined
+
+        var a=2,b=7,hap=0,gob=0,nmg=0;
+        
+            hap= a+b ;
+            gob= a*b ;
+            nmg= a%b ;
+
+        //비트연산
+        var bit1=a&b ; //양쪽참=1일때
+        var bit2=a|b ;
+                document.write(bit1,'<br>'); //1
+                document.write(bit2,'<br>'); //7
+           
+    }//end
+</script>
+  
+</head>
+<!-- 주석 '시작' 입니다.    ------  -->
+<body>
+    <h2> 11_Test_avg.html </h2>
+
+    <div id="Showup"></div>
+    <button onclick="mybit()">result</button>
+
+
+  
+</body>
